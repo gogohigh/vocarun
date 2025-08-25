@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'https://esm.sh/react@18.2.0';
+import React, { useState, useEffect } from 'react';
 import ProgressBar from './ProgressBar.js';
 import SpeakerIcon from './SpeakerIcon.js';
 

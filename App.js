@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'https://esm.sh/react@18.2.0';
+import React, { useState, useEffect, useCallback } from 'react';
 import StartScreen from './components/StartScreen.js';
 import GameScreen from './components/GameScreen.js';
 import EndScreen from './components/EndScreen.js';
