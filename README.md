@@ -16,7 +16,7 @@
 
 ## 🛠️ 기술 스택
 
-- **React & TypeScript**: 컴포넌트 기반 UI 개발
+- **React & JavaScript**: 컴포넌트 기반 UI 개발
 - **Tailwind CSS (CDN)**: 빠르고 일관된 스타일링
 - **Web Speech API (SpeechSynthesis)**: 텍스트 음성 변환 기능 구현
 
