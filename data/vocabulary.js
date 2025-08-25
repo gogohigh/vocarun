@@ -1,6 +1,4 @@
-import type { VocabularyWord } from '../types';
-
-export const vocabularyList: VocabularyWord[] = [
+export const vocabularyList = [
   { id: 1, spelling: 'psychologist', koreanMeaning: '심리학자' },
   { id: 2, spelling: 'figure out', koreanMeaning: '~을 파악하다, 이해하다' },
   { id: 3, spelling: 'empathize', koreanMeaning: '공감하다' },

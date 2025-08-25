@@ -1,21 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import type { Question } from '../types';
-import ProgressBar from './ProgressBar';
-import SpeakerIcon from './SpeakerIcon';
+import ProgressBar from './ProgressBar.jsx';
+import SpeakerIcon from './SpeakerIcon.jsx';
 
-interface GameScreenProps {
-    question: Question;
-    options: string[];
-    onAnswer: (answer: string) => void;
-    currentIndex: number;
-    totalWords: number;
-    feedback: 'correct' | 'incorrect' | 'idle';
-    selectedAnswer: string | null;
-    completionPercentage: number;
-    onNextQuestion: () => void;
-}
-
-const GameScreen: React.FC<GameScreenProps> = ({
+const GameScreen = ({
     question,
     options,
     onAnswer,
@@ -43,18 +30,18 @@ const GameScreen: React.FC<GameScreenProps> = ({
         }
     };
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleInputChange = (e) => {
         setInputValue(e.target.value);
     };
 
-    const handleSubmit = (e?: React.FormEvent) => {
+    const handleSubmit = (e) => {
         e?.preventDefault();
         if (inputValue.trim()) {
             onAnswer(inputValue);
         }
     };
     
-    const getButtonClass = (option: string) => {
+    const getButtonClass = (option) => {
         if (feedback === 'idle') {
             return 'bg-[#1a1a1a] hover:bg-[#2a2a2a] border-[#00ff41]';
         }

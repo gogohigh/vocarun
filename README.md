@@ -43,3 +43,19 @@
 
 3.  **브라우저에서 열기**:
     웹 브라우저를 열고 `http://localhost:8000` (또는 서버가 지정한 다른 주소)으로 접속합니다.
+
+## 🚀 GitHub Pages 배포하기
+
+이 프로젝트는 별도의 빌드 과정 없이 GitHub Pages에 바로 배포할 수 있습니다.
+
+1.  **GitHub 저장소에 코드 푸시(Push)**:
+    프로젝트 파일을 GitHub 저장소에 푸시합니다.
+
+2.  **GitHub Pages 설정**:
+    -   배포하려는 저장소의 **Settings** 탭으로 이동합니다.
+    -   왼쪽 메뉴에서 **Pages**를 클릭합니다.
+    -   **Build and deployment** 섹션의 **Source**에서 **Deploy from a branch**를 선택합니다.
+    -   **Branch** 섹션에서 배포할 브랜치(예: `main` 또는 `master`)와 폴더(`/(root)`)를 선택한 후 **Save**를 누릅니다.
+
+3.  **배포 확인**:
+    잠시 후 배포가 완료되며, 페이지 상단에 게시된 사이트의 URL이 표시됩니다. (예: `https://<your-username>.github.io/<your-repo-name>/`)
